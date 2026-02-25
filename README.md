@@ -40,7 +40,7 @@ Example of schema standardization and dataset unification using UNION and SELECT
 
 ## Analytical Layer and Reporting
 
-The final model supports executive dashboards focused on productivity, capacity, and service status analysis. I'll show next an example of a general visualization. The reporting layer includes calculated measures and conditional logic using DAX functions such as CALCULATE, IF, DISTINCTCOUNT, SUM, AVERAGE, and conditional filtering with IN expressions to support dynamic KPI analysis.
+The final model supports executive dashboards focused on productivity, capacity, and service status analysis. I'll show next an example of a general visualization. The reporting layer includes calculated measures and conditional logic using DAX functions such as CALCULATE, IF, DISTINCTCOUNT, SUM, AVERAGE, and conditional filtering with IN expressions to support dynamic KPI analysis. Everything can be filter by using the display bottoms above
 
 ![Intro Page](Visuals/01_Visuals_example_(Intro_Page).png)
 
@@ -59,6 +59,8 @@ Where:
 
 ![Installed Capacity 2](Visuals/03_Installed_Capacity_(usage_table).png)
 
-A final example of a dashboard. Here I displayed the Appointment Status Trend Over Time and the Appointment Status Distribution
+### Appointment Status Trend Over Time and the Appointment Status Distribution
 
-![VisitStatus](Visuals/04_VisitStatus_evolution).png)
+A final example. It was needed a dashboard to analyze deviations in Appointment Status in order to identify changes overtime, tendencies in appointment blocking and client absences
+
+![Visit Status](Visuals/04_VisitStatus_evolution.png)
