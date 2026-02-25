@@ -24,5 +24,5 @@ Multiple operational systems with inconsistent schemas, naming conventions, and 
 
 ### Star Schema Model
 
-![Star Model](Model/01_star_model.png)
+![Star Model](Model/01_Star_Model.png)
 
