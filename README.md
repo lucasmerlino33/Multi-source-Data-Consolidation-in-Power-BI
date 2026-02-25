@@ -3,7 +3,7 @@ Engineered a multi-source data consolidation workflow in Power BI. Implemented p
 
 ## Problem Context
 
-Multiple operational systems with inconsistent schemas, naming conventions, and business rules needed to be consolidated into a unified analytical model to enable cross-product performance comparison.
+Multiple operational systems with inconsistent schemas, naming conventions, and business rules needed to be consolidated into a unified analytical model to enable cross-product performance comparison. Note: I've censored sensible information due to confidentials
 
 ## Technical Challenges
 
@@ -40,6 +40,25 @@ Example of schema standardization and dataset unification using UNION and SELECT
 
 ## Analytical Layer and Reporting
 
-The final model supports executive dashboards focused on productivity, capacity, and service status analysis.
+The final model supports executive dashboards focused on productivity, capacity, and service status analysis. I'll show next an example of a general visualization. The reporting layer includes calculated measures and conditional logic using DAX functions such as CALCULATE, IF, DISTINCTCOUNT, SUM, AVERAGE, and conditional filtering with IN expressions to support dynamic KPI analysis.
 
+![Intro Page](Visuals/01_Visuals_example_(Intro_Page).png)
 
+### Installed Capacity Analysis
+
+The model also enables installed capacity analysis, both in graphical and tabular formats. Office utilization is calculated as:
+
+Utilization Rate = IFERROR([Scheduled Hours] / [Theoretical Hours], 0)
+
+Where:
+- Scheduled Hours represent total booked hours.
+- Theoretical Hours are calculated as:
+  Number of Offices × Business Days × Opening Hours per Location.
+
+![Installed Capacity 1](Visuals/02_Installed_Capacity_(usage_graphic).png)
+
+![Installed Capacity 2](Visuals/02_Installed_Capacity_(usage_table).png)
+
+A final example of a dashboard. Here I displayed the Appointment Status Trend Over Time and the Appointment Status Distribution
+
+![VisitStatus](Visuals/04_Visit_Status_evolution).png)
