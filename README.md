@@ -3,7 +3,7 @@ Engineered a multi-source data consolidation workflow in Power BI. Implemented p
 
 ## Problem Context
 
-Multiple operational systems with inconsistent schemas, naming conventions, and business rules needed to be consolidated into a unified analytical model to enable cross-product performance comparison. Note: I've censored sensible information due to confidentials
+Multiple operational systems with inconsistent schemas, naming conventions, and business rules needed to be consolidated into a unified analytical model to enable cross-product performance comparison. Note: Sensitive information has been anonymized due to confidentiality constraints.
 
 ## Technical Challenges
 
@@ -32,23 +32,29 @@ Example of schema standardization and dataset unification using UNION and SELECT
 
 ![Data Consolidation](Model/02_Data_consolidation_(General).png)
 
+### UNION example
+
 ![Virtual Service UNION](Model/03_Virtual_Service_(UNION_example).png)
 
+### FILTER example
+
 ![Events Base FILTER](Model/04_Events_base_(FILTER_example).png)
+
+### Final consolidation (extract)
 
 ![Stadistical Consolidated](Model/05_Stadistical_Cosolidated_(partial).png)
 
 ## Analytical Layer and Reporting
 
-The final model supports executive dashboards focused on productivity, capacity, and service status analysis. I'll show next an example of a general visualization. The reporting layer includes calculated measures and conditional logic using DAX functions such as CALCULATE, IF, DISTINCTCOUNT, SUM, AVERAGE, and conditional filtering with IN expressions to support dynamic KPI analysis. Everything can be filter by using the display bottoms above
+The final model supports executive dashboards focused on productivity, capacity, and service status analysis. I'll show next an example of a general visualization. The reporting layer includes calculated measures and conditional logic using DAX functions such as CALCULATE, IF, DISTINCTCOUNT, SUM, AVERAGE, and conditional filtering with IN expressions to support dynamic KPI analysis. All visualizations support dynamic filtering through interactive slicers and controls.
 
 ![Intro Page](Visuals/01_Visuals_example_(Intro_Page).png)
 
 ### Installed Capacity Analysis
 
-The model also enables installed capacity analysis, both in graphical and tabular formats. Office utilization is calculated as:
+TThe model also enables installed capacity analysis in both graphical and tabular formats. Office utilization is calculated as:
 
-Utilization Rate = IFERROR([Scheduled Hours] / [Theoretical Hours], 0)
+Utilization Rate = DIVIDE([Scheduled Hours], [Theoretical Hours], 0)
 
 Where:
 - Scheduled Hours represent total booked hours.
@@ -61,6 +67,6 @@ Where:
 
 ### Appointment Status Trend Over Time and the Appointment Status Distribution
 
-A final example. It was needed a dashboard to analyze deviations in Appointment Status in order to identify changes overtime, tendencies in appointment blocking and client absences
+A final example. A dedicated dashboard was developed to analyze deviations in appointment status, identify trends over time, and detect patterns in appointment blocking and client no-shows.
 
 ![Visit Status](Visuals/04_VisitStatus_evolution.png)
