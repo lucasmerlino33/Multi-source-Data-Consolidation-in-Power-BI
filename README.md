@@ -57,8 +57,8 @@ Where:
 
 ![Installed Capacity 1](Visuals/02_Installed_Capacity_(usage_graphic).png)
 
-![Installed Capacity 2](Visuals/02_Installed_Capacity_(usage_table).png)
+![Installed Capacity 2](Visuals/03_Installed_Capacity_(usage_table).png)
 
 A final example of a dashboard. Here I displayed the Appointment Status Trend Over Time and the Appointment Status Distribution
 
-![VisitStatus](Visuals/04_Visit_Status_evolution).png)
+![VisitStatus](Visuals/04_VisitStatus_evolution).png)
