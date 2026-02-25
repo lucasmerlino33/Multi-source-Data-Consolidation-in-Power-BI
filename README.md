@@ -26,3 +26,18 @@ Multiple operational systems with inconsistent schemas, naming conventions, and 
 
 ![Star Model](Model/01_Star_Model.png)
 
+### Multi-source Consolidation
+
+Example of schema standardization and dataset unification using UNION and SELECTCOLUMNS to align heterogeneous structures into a consistent fact table.
+
+![Data Consolidation]Model/02_Data_consolidation_(General).png
+
+![Virtual Service UNION]Model/03_Virtual_Service_(UNION_example).png
+
+![Events Base FILTER]Model/04_Events_base_(FILTER_example).png
+
+![Stadistical Consolidated]Model/05_Stadistical_Cosolidated_(partial).png
+
+## Analytical Layer and Reporting
+
+The final model supports executive dashboards focused on productivity, capacity, and service status analysis.
