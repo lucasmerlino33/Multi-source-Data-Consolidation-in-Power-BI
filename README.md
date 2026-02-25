@@ -46,13 +46,13 @@ Example of schema standardization and dataset unification using UNION and SELECT
 
 ## Analytical Layer and Reporting
 
-The final model supports executive dashboards focused on productivity, capacity, and service status analysis. I'll show next an example of a general visualization. The reporting layer includes calculated measures and conditional logic using DAX functions such as CALCULATE, IF, DISTINCTCOUNT, SUM, AVERAGE, and conditional filtering with IN expressions to support dynamic KPI analysis. All visualizations support dynamic filtering through interactive slicers and controls.
+The final model supports executive dashboards focused on productivity, capacity, and service status analysis. Below is an example of a general executive visualization. The reporting layer includes calculated measures and conditional logic using DAX functions such as CALCULATE, IF, DISTINCTCOUNT, SUM, AVERAGE, and conditional filtering with IN expressions to support dynamic KPI analysis. All visualizations support dynamic filtering through interactive slicers and controls.
 
 ![Intro Page](Visuals/01_Visuals_example_(Intro_Page).png)
 
 ### Installed Capacity Analysis
 
-TThe model also enables installed capacity analysis in both graphical and tabular formats. Office utilization is calculated as:
+The model also enables installed capacity analysis in both graphical and tabular formats. Office utilization is calculated as:
 
 Utilization Rate = DIVIDE([Scheduled Hours], [Theoretical Hours], 0)
 
@@ -67,6 +67,6 @@ Where:
 
 ### Appointment Status Trend Over Time and the Appointment Status Distribution
 
-A final example. A dedicated dashboard was developed to analyze deviations in appointment status, identify trends over time, and detect patterns in appointment blocking and client no-shows.
+As a final example, a dedicated dashboard was developed to analyze deviations in appointment status, identify trends over time, and detect patterns in appointment blocking and client no-shows.
 
 ![Visit Status](Visuals/04_VisitStatus_evolution.png)
